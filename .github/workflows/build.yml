@@ -26,7 +26,7 @@ jobs:
           cache: gradle
 
       - name: build
-        run: ./gradlew buildOrPublish
+        run: ./gradlew buildOrPublish --stacktrace
 
       - name: capture build artifacts
         uses: actions/upload-artifact@v3
